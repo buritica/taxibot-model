@@ -1,0 +1,109 @@
+{
+  "data" : [
+    {
+      "name" : "",
+      "turns" : [
+        {
+          "user" : "El taxi ABC123 me dio billetes falsos",
+          "entities" : [
+            {
+              "entity" : "intent",
+              "value" : "\"report\""
+            },
+            {
+              "entity" : "licensePlates",
+              "value" : "\"ABC123\"",
+              "start" : 8,
+              "end" : 14
+            },
+            {
+              "entity" : "offenses",
+              "value" : "\"fake_currency\"",
+              "start" : 22,
+              "end" : 37
+            }
+          ],
+          "operations" : [
+            {
+              "action" : "function-validateReports"
+            },
+            {
+              "branches" : [
+                {
+                  "predicates" : [
+                    {
+                      "name" : "pendingReports",
+                      "negative" : false
+                    }
+                  ],
+                  "operations" : [ ],
+                  "turns" : [
+                    {
+                      "branches" : [
+                        [
+                          {
+                            "user" : "Sí",
+                            "entities" : [
+                              {
+                                "entity" : "yes_no",
+                                "value" : "\"yes\"",
+                                "start" : 0,
+                                "end" : 2
+                              }
+                            ],
+                            "operations" : [
+                              {
+                                "action" : "function-handlePendingReports"
+                              }
+                            ]
+                          }
+                        ],
+                        [
+                          {
+                            "user" : "No",
+                            "entities" : [
+                              {
+                                "entity" : "yes_no",
+                                "value" : "\"no\"",
+                                "start" : 0,
+                                "end" : 2
+                              }
+                            ],
+                            "operations" : [
+                              {
+                                "action" : "function-handlePendingReports"
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "",
+      "turns" : [
+        {
+          "user" : "Hola",
+          "entities" : [
+            {
+              "entity" : "intent",
+              "value" : "\"greeting\""
+            }
+          ],
+          "operations" : [
+            {
+              "action" : "template-Holi 👋"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

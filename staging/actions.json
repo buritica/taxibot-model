@@ -1,0 +1,39 @@
+{
+  "data" : [
+    {
+      "id" : "function-handlePendingReports",
+      "type" : "function",
+      "name" : "handlePendingReports",
+      "requirements" : [
+        {
+          "name" : "pendingReports",
+          "negative" : false
+        },
+        {
+          "name" : "sender",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "function-validateReports",
+      "type" : "function",
+      "name" : "validateReports",
+      "requirements" : [
+        {
+          "name" : "licensePlates",
+          "negative" : false
+        },
+        {
+          "name" : "offenses",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "template-Holi 👋",
+      "type" : "template",
+      "template" : "Holi 👋"
+    }
+  ]
+}

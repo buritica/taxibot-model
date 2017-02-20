@@ -1,0 +1,41 @@
+{
+  "data" : {
+    "lookups" : [
+      "free-text",
+      "keywords",
+      "trait",
+      "trait"
+    ],
+    "name" : "intent",
+    "lang" : "es",
+    "exotic" : false,
+    "id" : "intent",
+    "values" : [
+      {
+        "value" : "greeting",
+        "expressions" : [
+          "hello",
+          "hola",
+          "holi",
+          "kiubo",
+          "que hubo",
+          "quiubo",
+          "tonces",
+          "tonces que",
+          "tos q"
+        ]
+      },
+      {
+        "value" : "report",
+        "expressions" : [
+          "denucio",
+          "denuncio",
+          "reportar",
+          "reporto"
+        ]
+      }
+    ],
+    "doc" : "User-defined entity",
+    "builtin" : false
+  }
+}

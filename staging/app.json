@@ -1,0 +1,8 @@
+{
+  "version" : 20160513,
+  "zip-command" : "zip taxibot-staging.zip taxibot-staging/app.json taxibot-staging/entities/*.json taxibot-staging/actions.json taxibot-staging/stories.json taxibot-staging/expressions.json",
+  "data" : {
+    "name" : "taxibot-staging",
+    "lang" : "es"
+  }
+}

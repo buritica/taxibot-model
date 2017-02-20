@@ -1,0 +1,164 @@
+{
+  "data" : {
+    "lookups" : [
+      "free-text",
+      "keywords",
+      "trait"
+    ],
+    "name" : "offenses",
+    "lang" : "es",
+    "exotic" : false,
+    "id" : "offenses",
+    "values" : [
+      {
+        "value" : "armed_robbery",
+        "expressions" : [
+          "armed_robbery",
+          "atracarme",
+          "me atrac",
+          "me atraco",
+          "me atracó",
+          "me robo",
+          "me robó",
+          "robar",
+          "robarme"
+        ]
+      },
+      {
+        "value" : "bad_service",
+        "expressions" : [
+          "bad_service",
+          "horrible servicio",
+          "mal servicio",
+          "pesimo servicio"
+        ]
+      },
+      {
+        "value" : "fake_currency",
+        "expressions" : [
+          "billete falso",
+          "billetes falsos",
+          "fake_currency",
+          "un billete falso",
+          "vueltas falsas"
+        ]
+      },
+      {
+        "value" : "high_speed",
+        "expressions" : [
+          " ir muy rapido",
+          "alta velocidad",
+          "corre mucho",
+          "correr mucho",
+          "iba demasiado rapido",
+          "maneja muy rapido",
+          "manejar muy rapido",
+          "manejar rapido",
+          "va muy rapido"
+        ]
+      },
+      {
+        "value" : "ignored_signals",
+        "expressions" : [
+          "invade zebra",
+          "irrespeta pare",
+          "irrespeta toda señal de transito",
+          "no respeta señal",
+          "parado sobre la zebra",
+          "se pasa el paré",
+          "se voló el pare",
+          "se voló la fila para el semáforo",
+          "semaforo",
+          "semaforo en rojo"
+        ]
+      },
+      {
+        "value" : "millionaire_trip",
+        "expressions" : [
+          "millionaire_trip",
+          "paseo millonario"
+        ]
+      },
+      {
+        "value" : "no_change",
+        "expressions" : [
+          " no tiene vueltas",
+          "no tener vueltas",
+          "no tenia de vueltas",
+          "no tenía vueltas",
+          "no_change",
+          "sin vueltas"
+        ]
+      },
+      {
+        "value" : "rejected_trip",
+        "expressions" : [
+          " para allá no voy",
+          "no la llevo",
+          "no llevarme",
+          "no lo llevo",
+          "no me llevo",
+          "no me llevó",
+          "no me quiso llevar",
+          "no me quizo llevar",
+          "rejected_trip"
+        ]
+      },
+      {
+        "value" : "sexual_harrasment",
+        "expressions" : [
+          "acosador",
+          "acoso sexual",
+          "deprabado",
+          "depravado",
+          "morboso",
+          "viejo verde"
+        ]
+      },
+      {
+        "value" : "smoking",
+        "expressions" : [
+          "estaba fumando",
+          "fumaba",
+          "fumando",
+          "fumando cigarrillo",
+          "fumar",
+          "smoking"
+        ]
+      },
+      {
+        "value" : "stinky",
+        "expressions" : [
+          "apesta",
+          "apestaba",
+          "apestar",
+          "apestoso",
+          "bad_smell",
+          "huele a mierda",
+          "huele a pecueca",
+          "huele a pequeca",
+          "huele asqueroso",
+          "huele feo",
+          "huele mal",
+          "mal olor",
+          "olia a mierda",
+          "olia feo",
+          "olía feo"
+        ]
+      },
+      {
+        "value" : "tampered_meter",
+        "expressions" : [
+          "tampered_meter",
+          "taximetro adulterado",
+          "taximetro marca más rápido",
+          "taximetro muy rapido",
+          "taximetro rapido",
+          "taxímetro muy rapido"
+        ]
+      }
+    ],
+    "doc" : "User-defined entity",
+    "builtin" : false
+  }
+}

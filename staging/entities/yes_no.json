@@ -1,0 +1,31 @@
+{
+  "data" : {
+    "lookups" : [
+      "free-text",
+      "keywords",
+      "trait",
+      "trait"
+    ],
+    "name" : "yes_no",
+    "lang" : "es",
+    "exotic" : false,
+    "id" : "yes_no",
+    "values" : [
+      {
+        "value" : "no",
+        "expressions" : [
+          "no"
+        ]
+      },
+      {
+        "value" : "yes",
+        "expressions" : [
+          "Si",
+          "Sí"
+        ]
+      }
+    ],
+    "doc" : "User-defined entity",
+    "builtin" : false
+  }
+}
