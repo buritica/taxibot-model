@@ -1,39 +1,59 @@
 {
   "data" : [
     {
+      "id" : "function-end",
+      "type" : "function",
+      "name" : "end"
+    },
+    {
       "id" : "function-handlePendingReports",
       "type" : "function",
-      "name" : "handlePendingReports",
-      "requirements" : [
-        {
-          "name" : "pendingReports",
-          "negative" : false
-        },
-        {
-          "name" : "sender",
-          "negative" : false
-        }
-      ]
+      "name" : "handlePendingReports"
     },
     {
       "id" : "function-validateReports",
       "type" : "function",
-      "name" : "validateReports",
+      "name" : "validateReports"
+    },
+    {
+      "id" : "template-¡Gracias! He guardado tu reporte sobre 🚖 {licensePlate} 🙅.",
+      "type" : "template",
+      "template" : "¡Gracias! He guardado tu reporte sobre 🚖 {licensePlate} 🙅.",
       "requirements" : [
         {
-          "name" : "licensePlates",
-          "negative" : false
-        },
-        {
-          "name" : "offenses",
+          "name" : "licensePlate",
           "negative" : false
         }
       ]
     },
     {
-      "id" : "template-Holi 👋",
+      "id" : "template-¿Quieres reportar a 🚖 {licensePlate} por {pendingOffenses}?",
       "type" : "template",
-      "template" : "Holi 👋"
+      "template" : "¿Quieres reportar a 🚖 {licensePlate} por {pendingOffenses}?",
+      "requirements" : [
+        {
+          "name" : "licensePlate",
+          "negative" : false
+        },
+        {
+          "name" : "pendingOffenses",
+          "negative" : false
+        }
+      ],
+      "quickreplies" : [
+        "FILE_PENDING_REPORTS",
+        "CANCEL_PENDING_REPORTS"
+      ]
+    },
+    {
+      "id" : "template-👋 Holi",
+      "type" : "template",
+      "template" : "👋 Holi"
+    },
+    {
+      "id" : "template-👌 He cancelado tu reporte pendiente.",
+      "type" : "template",
+      "template" : "👌 He cancelado tu reporte pendiente."
     }
   ]
 }

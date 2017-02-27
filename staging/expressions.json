@@ -150,6 +150,21 @@
       ]
     },
     {
+      "text" : "ABC124",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"\""
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ABC124\"",
+          "start" : 0,
+          "end" : 6
+        }
+      ]
+    },
+    {
       "text" : "ACM236 no tenia vueltas",
       "entities" : [
         {
@@ -2800,6 +2815,23 @@
       ]
     },
     {
+      "text" : "El taxi ABC123 me dio un bilete falso",
+      "entities" : [
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ABC123\"",
+          "start" : 8,
+          "end" : 14
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 22,
+          "end" : 37
+        }
+      ]
+    },
+    {
       "text" : "El taxi ABC123 me dio un billete falso",
       "entities" : [
         {
@@ -4773,6 +4805,21 @@
         {
           "entity" : "intent",
           "value" : "\"greeting\""
+        }
+      ]
+    },
+    {
+      "text" : "Holi",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\""
+        },
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\"",
+          "start" : 0,
+          "end" : 4
         }
       ]
     },
@@ -9331,6 +9378,58 @@
       ]
     },
     {
+      "text" : "Quiero reportar a ABC123 por darme un bilete falso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ABC123\"",
+          "start" : 18,
+          "end" : 24
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 35,
+          "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar a ABC123 por fumar y por morboso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ABC123\"",
+          "start" : 18,
+          "end" : 24
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 29,
+          "end" : 34
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 41,
+          "end" : 48
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi ACF628 por tener billetes falsos",
       "entities" : [
         {
@@ -9492,6 +9591,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi AHL785 por mal servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"AHL785\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 47
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi ALB585 por brindar mal servicio",
       "entities" : [
         {
@@ -9534,6 +9656,29 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi ANJ238 por mal servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ANJ238\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 47
         }
       ]
     },
@@ -9860,6 +10005,144 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi BAA177 por apestar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BAA177\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 35,
+          "end" : 42
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi BAA177 por apestoso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BAA177\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 35,
+          "end" : 43
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi BAA177 por que apestaba",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BAA177\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 47
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi BAA177 por que huele a mierda",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BAA177\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 53
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi BAA177 por que huele asqueroso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BAA177\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 54
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi BAA177 por que olía feo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BAA177\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 47
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi BCO553 por alta velocidad",
       "entities" : [
         {
@@ -10157,6 +10440,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi BJS242 por morboso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BJS242\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 42
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi BMM563 por brindar mal servicio",
       "entities" : [
         {
@@ -10272,6 +10578,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi BMT589 por darme un billete falso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BMT589\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 57
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi BOH391 por que olía feo",
       "entities" : [
         {
@@ -10364,6 +10693,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi BPB837 por no tener vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BPB837\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 35,
+          "end" : 51
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi BPB837 por que no tenia de vueltas",
       "entities" : [
         {
@@ -10387,6 +10739,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi BPB837 por que no tenía vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BPB837\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 39,
+          "end" : 55
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi BPB837 por que no tiene vueltas",
       "entities" : [
         {
@@ -10406,6 +10781,29 @@
           "value" : "\"no_change\"",
           "start" : 39,
           "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi BQQ411 por darme un billete falso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"BQQ411\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 57
         }
       ]
     },
@@ -10962,6 +11360,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi CLG223 por robarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"CLG223\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 35,
+          "end" : 42
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi CRS619 por que me robó con un cuchillo",
       "entities" : [
         {
@@ -11259,6 +11680,121 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi DAW889 por atracarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"DAW889\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 35,
+          "end" : 44
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi DAW889 por que me atraco",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"DAW889\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi DAW889 por que me atracó",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"DAW889\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi DAW889 por que me robo con un arma",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"DAW889\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi DAW889 por que me robo con una pistola",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"DAW889\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 46
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi DAW889 por que me robó",
       "entities" : [
         {
@@ -11301,6 +11837,52 @@
           "value" : "\"armed_robbery\"",
           "start" : 39,
           "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi DAW889 por robarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"DAW889\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 35,
+          "end" : 42
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi DIC762 por manejar rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"DIC762\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 49
         }
       ]
     },
@@ -11485,6 +12067,29 @@
           "value" : "\"sexual_harrasment\"",
           "start" : 35,
           "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi DJM288 por no respeta señal",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"DJM288\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 51
         }
       ]
     },
@@ -12110,6 +12715,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi DSG616 por que no me llevó",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"DSG616\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
+          "end" : 50
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi DXA698 por que olia feo",
       "entities" : [
         {
@@ -12179,6 +12807,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi EBJ845 por darme un billete falso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"EBJ845\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 57
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi ECB273 por darme billetes falsos",
       "entities" : [
         {
@@ -12225,6 +12876,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi ECJ848 por acosador",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ECJ848\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 43
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi ECJ848 por acoso sexual",
       "entities" : [
         {
@@ -12244,6 +12918,98 @@
           "value" : "\"sexual_harrasment\"",
           "start" : 35,
           "end" : 47
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi ECJ848 por deprabado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ECJ848\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 44
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi ECJ848 por deprabado asqueroso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ECJ848\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 44
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi ECJ848 por depravado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ECJ848\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 44
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi ECJ848 por morboso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ECJ848\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 42
         }
       ]
     },
@@ -12271,6 +13037,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi ECJ848 por viejo verde",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ECJ848\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 46
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi ECX289 por andar sin vueltas",
       "entities" : [
         {
@@ -12290,6 +13079,52 @@
           "value" : "\"no_change\"",
           "start" : 41,
           "end" : 52
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi EEE357 por no llevarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"EEE357\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 35,
+          "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi EEE357 por que me dijo para allá no voy",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"EEE357\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 47,
+          "end" : 63
         }
       ]
     },
@@ -12340,6 +13175,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi EEE357 por que no me quiso llevar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"EEE357\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
+          "end" : 57
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi EEE357 por que no me quizo llevar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"EEE357\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
+          "end" : 57
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi EGU298 por que no tenía vueltas",
       "entities" : [
         {
@@ -12382,6 +13263,29 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi ETX338 por que fumaba",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"ETX338\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 39,
+          "end" : 45
         }
       ]
     },
@@ -12662,6 +13566,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi FDH271 por estar fumando cigarrillo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FDH271\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 41,
+          "end" : 59
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi FDH271 por fumar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FDH271\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 35,
+          "end" : 40
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi FDH271 por que estaba fumando",
       "entities" : [
         {
@@ -12685,6 +13635,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi FDH271 por que fumaba",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FDH271\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 39,
+          "end" : 45
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi FDH271 por que iba fumando",
       "entities" : [
         {
@@ -12704,6 +13677,52 @@
           "value" : "\"smoking\"",
           "start" : 43,
           "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi FEK217 por que me robó",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FEK217\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi FGU169 por acoso sexual",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FGU169\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 47
         }
       ]
     },
@@ -12754,6 +13773,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi FIU709 por tener taximetro adulterado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FIU709\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 41,
+          "end" : 61
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi FJF533 por hacerme paseo millonario",
       "entities" : [
         {
@@ -12800,6 +13842,121 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi FJS161 por alta velocidad",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FJS161\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 49
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi FJS161 por iba demasiado rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FJS161\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi FJS161 por que corre mucho",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FJS161\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 39,
+          "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi FKB142 por andar sin vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FKB142\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 41,
+          "end" : 52
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi FKM709 por taximetro rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FKM709\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 35,
+          "end" : 51
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi FMY949 por darme vueltas falsas",
       "entities" : [
         {
@@ -12819,6 +13976,29 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi FOC592 por alta velocidad",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"FOC592\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 49
         }
       ]
     },
@@ -12888,6 +14068,29 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 57
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi GCC664 por invade zebra",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"GCC664\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 47
         }
       ]
     },
@@ -13030,6 +14233,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi GJH601 por que me atraco",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"GJH601\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 48
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi GJN756 por huele a pequeca",
       "entities" : [
         {
@@ -13047,6 +14273,29 @@
           "value" : "\"GJN756\"",
           "start" : 24,
           "end" : 30
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi GJP832 por semaforo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"GJP832\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 43
         }
       ]
     },
@@ -13092,6 +14341,29 @@
           "entity" : "offenses",
           "value" : "\"stinky\"",
           "start" : 35,
+          "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi GMB423 por que no me llevó",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"GMB423\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
           "end" : 50
         }
       ]
@@ -13465,6 +14737,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi GUD171 por deprabado asqueroso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"GUD171\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 44
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi GUD171 por depravado",
       "entities" : [
         {
@@ -13511,6 +14806,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi GUD171 por ser un depravado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"GUD171\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 42,
+          "end" : 51
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi GUD171 por viejo verde",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"GUD171\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 46
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi GVU318 por huele a mierda",
       "entities" : [
         {
@@ -13530,6 +14871,29 @@
           "value" : "\"stinky\"",
           "start" : 35,
           "end" : 49
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi GXC248 por brindar mal servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"GXC248\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 43,
+          "end" : 55
         }
       ]
     },
@@ -13576,6 +14940,29 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi HCP471 por pesimo servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"HCP471\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 50
         }
       ]
     },
@@ -13785,6 +15172,75 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi HND418 por no llevarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"HND418\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 35,
+          "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi HND418 por que me dijo para allá no voy",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"HND418\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 47,
+          "end" : 63
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi HND418 por que no me llevo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"HND418\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
+          "end" : 50
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi HND418 por que no me llevó",
       "entities" : [
         {
@@ -13804,6 +15260,52 @@
           "value" : "\"rejected_trip\"",
           "start" : 39,
           "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi HND418 por que no me quiso llevar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"HND418\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
+          "end" : 57
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi HND418 por que no me quizo llevar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"HND418\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
+          "end" : 57
         }
       ]
     },
@@ -14149,6 +15651,29 @@
           "value" : "\"stinky\"",
           "start" : 39,
           "end" : 47
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi HTW121 por estar fumando cigarrillo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"HTW121\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 41,
+          "end" : 59
         }
       ]
     },
@@ -15186,6 +16711,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi JFK953 por horrible servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JFK953\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 52
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi JFK953 por mal servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JFK953\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 47
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi JFK953 por pesimo servicio",
       "entities" : [
         {
@@ -15301,6 +16872,98 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi JGB849 por ser un depravado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JGB849\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 42,
+          "end" : 51
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi JJN958 por alta velocidad",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JJN958\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 49
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi JJN958 por iba demasiado rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JJN958\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi JJN958 por ir muy rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JJN958\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 48
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi JJN958 por manejar rapido",
       "entities" : [
         {
@@ -15320,6 +16983,29 @@
           "value" : "\"high_speed\"",
           "start" : 35,
           "end" : 49
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi JJN958 por que corre mucho",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JJN958\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 39,
+          "end" : 50
         }
       ]
     },
@@ -15347,6 +17033,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi JKQ694 por darme billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JKQ694\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi JMN142 por que no me llevo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JMN142\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
+          "end" : 50
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi JPL104 por no llevarme",
       "entities" : [
         {
@@ -15366,6 +17098,29 @@
           "value" : "\"rejected_trip\"",
           "start" : 35,
           "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi JRI117 por tener billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JRI117\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
         }
       ]
     },
@@ -15412,6 +17167,75 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi JTT519 por mal servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JTT519\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 47
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi JTU859 por morboso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JTU859\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 42
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi JTU859 por ser un depravado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"JTU859\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 42,
+          "end" : 51
         }
       ]
     },
@@ -15623,6 +17447,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi KCS777 por darme vueltas falsas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KCS777\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KCX528 por hacerme paseo millonario",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KCX528\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"millionaire_trip\"",
+          "start" : 43,
+          "end" : 59
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi KEH369 por brindar mal servicio",
       "entities" : [
         {
@@ -15734,6 +17604,121 @@
           "value" : "\"bad_service\"",
           "start" : 35,
           "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KEH933 por hacerme paseo millonario",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KEH933\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"millionaire_trip\"",
+          "start" : 43,
+          "end" : 59
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KFB200 por depravado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KFB200\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 44
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KGX402 por viejo verde",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KGX402\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"sexual_harrasment\"",
+          "start" : 35,
+          "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KHF250 por que huele mal",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KHF250\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KLY695 por robarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KLY695\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 35,
+          "end" : 42
         }
       ]
     },
@@ -15968,6 +17953,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi KSE216 por tener billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KSE216\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi KUX752 por invade zebra",
       "entities" : [
         {
@@ -15987,6 +17995,29 @@
           "value" : "\"ignored_signals\"",
           "start" : 35,
           "end" : 47
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KUX752 por irrespeta pare",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KUX752\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 49
         }
       ]
     },
@@ -16060,6 +18091,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi KUX752 por se pasa el paré",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KUX752\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KUX752 por se voló el pare",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KUX752\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 50
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi KUX752 por se voló la fila para el semáforo",
       "entities" : [
         {
@@ -16106,6 +18183,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi KUX752 por semaforo en rojo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KUX752\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 51
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi KVN796 por estar sin vueltas",
       "entities" : [
         {
@@ -16125,6 +18225,75 @@
           "value" : "\"no_change\"",
           "start" : 41,
           "end" : 52
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KYO844 por estar sin vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KYO844\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 41,
+          "end" : 52
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KYO844 por no tener vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KYO844\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 35,
+          "end" : 51
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi KYO844 por que no tiene vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"KYO844\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 39,
+          "end" : 55
         }
       ]
     },
@@ -16209,6 +18378,29 @@
         {
           "entity" : "licensePlates",
           "value" : "\"LAE773\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi LJA705 por darme billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"LJA705\"",
           "start" : 24,
           "end" : 30
         },
@@ -16612,6 +18804,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi LRH757 por tener taximetro adulterado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"LRH757\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 41,
+          "end" : 61
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi LRH938 por huele asqueroso",
       "entities" : [
         {
@@ -16631,6 +18846,29 @@
           "value" : "\"stinky\"",
           "start" : 35,
           "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi LVR515 por darme billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"LVR515\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
         }
       ]
     },
@@ -16796,6 +19034,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi LYJ656 por que olía feo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"LYJ656\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 47
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi MAN400 por huele asqueroso",
       "entities" : [
         {
@@ -16934,6 +19195,98 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi MCU344 por apestar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"MCU344\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 35,
+          "end" : 42
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi MCU344 por apestoso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"MCU344\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 35,
+          "end" : 43
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi MCU344 por mal olor",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"MCU344\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 35,
+          "end" : 43
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi MCU344 por que apestaba",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"MCU344\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 47
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi MCU344 por que huele a mierda",
       "entities" : [
         {
@@ -16958,6 +19311,29 @@
     },
     {
       "text" : "Quiero reportar al taxi MCU344 por que huele a pecueca",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"MCU344\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 54
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi MCU344 por que huele a pequeca",
       "entities" : [
         {
           "entity" : "intent",
@@ -17045,6 +19421,52 @@
           "value" : "\"stinky\"",
           "start" : 39,
           "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi MCU344 por que olia a mierda",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"MCU344\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 52
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi MCU344 por que olia feo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"MCU344\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 47
         }
       ]
     },
@@ -17183,6 +19605,52 @@
           "value" : "\"stinky\"",
           "start" : 35,
           "end" : 43
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi MFS311 por que iba fumando",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"MFS311\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 43,
+          "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi MFW127 por robarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"MFW127\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 35,
+          "end" : 42
         }
       ]
     },
@@ -17459,6 +19927,29 @@
           "value" : "\"rejected_trip\"",
           "start" : 39,
           "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi MIU782 por hacerme paseo millonario",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"MIU782\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"millionaire_trip\"",
+          "start" : 43,
+          "end" : 59
         }
       ]
     },
@@ -18375,6 +20866,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi NCV843 por darme un billete falso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"NCV843\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 57
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi NED172 por estar fumando cigarrillo",
       "entities" : [
         {
@@ -18486,6 +21000,29 @@
           "value" : "\"smoking\"",
           "start" : 43,
           "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi NFY884 por que me robo con un arma",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"NFY884\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 46
         }
       ]
     },
@@ -20008,6 +22545,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi OKT307 por invade zebra",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"OKT307\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 47
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi OOB657 por darme billetes falsos",
       "entities" : [
         {
@@ -20928,6 +23488,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi PCY790 por irrespeta toda señal de transito",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"PCY790\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 67
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi PDR158 por que huele a pecueca",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"PDR158\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 54
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi PFQ400 por no llevarme",
       "entities" : [
         {
@@ -21062,6 +23668,98 @@
           "value" : "\"rejected_trip\"",
           "start" : 39,
           "end" : 57
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi PGB482 por hacerme paseo millonario",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"PGB482\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"millionaire_trip\"",
+          "start" : 43,
+          "end" : 59
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi PHW213 por alta velocidad",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"PHW213\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 49
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi PJU761 por que no tiene vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"PJU761\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 39,
+          "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi PKD721 por tener taximetro adulterado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"PKD721\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 41,
+          "end" : 61
         }
       ]
     },
@@ -21639,6 +24337,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi PUL576 por que no tiene vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"PUL576\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 39,
+          "end" : 55
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi PXE329 por brindar mal servicio",
       "entities" : [
         {
@@ -22099,6 +24820,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi QDF528 por mal servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"QDF528\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 47
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi QGF422 por alta velocidad",
       "entities" : [
         {
@@ -22122,6 +24866,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi QGF422 por iba demasiado rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"QGF422\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 55
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi QGF422 por ir muy rapido",
       "entities" : [
         {
@@ -22141,6 +24908,29 @@
           "value" : "\"high_speed\"",
           "start" : 35,
           "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi QGF422 por manejar rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"QGF422\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 49
         }
       ]
     },
@@ -22191,6 +24981,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi QKA992 por robarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"QKA992\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 35,
+          "end" : 42
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi QMV100 por darme vueltas falsas",
       "entities" : [
         {
@@ -22227,6 +25040,29 @@
           "value" : "\"rejected_trip\"",
           "start" : 39,
           "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi QRD429 por fumar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"QRD429\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 35,
+          "end" : 40
         }
       ]
     },
@@ -22551,6 +25387,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi RBI141 por andar sin vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RBI141\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 41,
+          "end" : 52
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi RBI141 por estar sin vueltas",
       "entities" : [
         {
@@ -22574,7 +25433,76 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi RBI141 por no tener vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RBI141\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 35,
+          "end" : 51
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi RBI141 por que no tenia de vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RBI141\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 39,
+          "end" : 58
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi RBI141 por que no tenía vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RBI141\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 39,
+          "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi RBI141 por que no tiene vueltas",
       "entities" : [
         {
           "entity" : "intent",
@@ -22616,6 +25544,98 @@
           "value" : "\"bad_service\"",
           "start" : 35,
           "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi RCE361 por taximetro muy rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RCE361\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 35,
+          "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi RCE361 por taximetro rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RCE361\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 35,
+          "end" : 51
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi RCE361 por tener taximetro adulterado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RCE361\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 41,
+          "end" : 61
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi RCR782 por que no tiene vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RCR782\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 39,
+          "end" : 55
         }
       ]
     },
@@ -22827,6 +25847,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi RHN933 por que iba fumando",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RHN933\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 43,
+          "end" : 50
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi RKF539 por darme billetes falsos",
       "entities" : [
         {
@@ -22869,6 +25912,75 @@
           "value" : "\"tampered_meter\"",
           "start" : 41,
           "end" : 61
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi RLB225 por ir muy rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RLB225\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi RLN653 por que no me llevó",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RLN653\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
+          "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi RLN653 por que no me quizo llevar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RLN653\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
+          "end" : 57
         }
       ]
     },
@@ -23275,6 +26387,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi RVU578 por que no me quizo llevar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RVU578\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 39,
+          "end" : 57
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi RYS107 por horrible servicio",
       "entities" : [
         {
@@ -23321,6 +26456,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi SBD384 por hacerme paseo millonario",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"SBD384\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"millionaire_trip\"",
+          "start" : 43,
+          "end" : 59
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi SEA748 por que no tenía vueltas",
       "entities" : [
         {
@@ -23340,6 +26498,29 @@
           "value" : "\"no_change\"",
           "start" : 39,
           "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi SFK900 por tener taximetro adulterado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"SFK900\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 41,
+          "end" : 61
         }
       ]
     },
@@ -23501,6 +26682,29 @@
           "value" : "\"stinky\"",
           "start" : 39,
           "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi SJP370 por no tener vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"SJP370\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 35,
+          "end" : 51
         }
       ]
     },
@@ -23754,6 +26958,98 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi SOE807 por mal servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"SOE807\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 47
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi SOE807 por pesimo servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"SOE807\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi SOH788 por taximetro rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"SOH788\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 35,
+          "end" : 51
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi SOH788 por tener taximetro adulterado",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"SOH788\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 41,
+          "end" : 61
         }
       ]
     },
@@ -24515,6 +27811,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi TTK281 por darme billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"TTK281\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi TVC286 por hacerme paseo millonario",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"TVC286\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"millionaire_trip\"",
+          "start" : 43,
+          "end" : 59
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi TVQ329 por darme un billete falso",
       "entities" : [
         {
@@ -24534,6 +27876,75 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 57
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi TXG368 por irrespeta pare",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"TXG368\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 49
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi TXG368 por se pasa el paré",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"TXG368\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi TXG368 por se voló el pare",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"TXG368\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 50
         }
       ]
     },
@@ -24975,6 +28386,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi UNX859 por manejar rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"UNX859\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 49
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi UOA624 por no tener vueltas",
       "entities" : [
         {
@@ -25270,6 +28704,75 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi USV825 por que apestaba",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"USV825\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 47
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi UUP473 por taximetro rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"UUP473\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 35,
+          "end" : 51
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi UWM386 por no llevarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"UWM386\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 35,
+          "end" : 46
         }
       ]
     },
@@ -25826,6 +29329,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi VTT509 por iba demasiado rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"VTT509\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 35,
+          "end" : 55
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi VVO477 por darme billetes falsos",
       "entities" : [
         {
@@ -25868,6 +29394,29 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi VXM509 por darme vueltas falsas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"VXM509\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 55
         }
       ]
     },
@@ -25987,6 +29536,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi WFX921 por invade zebra",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WFX921\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 47
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi WFX921 por irrespeta pare",
       "entities" : [
         {
@@ -26006,6 +29578,121 @@
           "value" : "\"ignored_signals\"",
           "start" : 35,
           "end" : 49
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WFX921 por irrespeta toda señal de transito",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WFX921\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 67
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WFX921 por no respeta señal",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WFX921\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 51
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WFX921 por parado sobre la zebra",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WFX921\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WFX921 por se pasa el paré",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WFX921\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 50
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WFX921 por se voló el pare",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WFX921\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 50
         }
       ]
     },
@@ -26052,6 +29739,29 @@
           "value" : "\"ignored_signals\"",
           "start" : 35,
           "end" : 43
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WFX921 por semaforo en rojo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WFX921\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"ignored_signals\"",
+          "start" : 35,
+          "end" : 51
         }
       ]
     },
@@ -26121,6 +29831,75 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WGR907 por estar fumando cigarrillo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WGR907\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 41,
+          "end" : 59
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WGR907 por fumar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WGR907\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 35,
+          "end" : 40
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WGR907 por que estaba fumando",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WGR907\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 39,
+          "end" : 53
         }
       ]
     },
@@ -26631,6 +30410,98 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi WJT391 por apestar",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WJT391\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 35,
+          "end" : 42
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WJT391 por apestoso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WJT391\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 35,
+          "end" : 43
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WJT391 por mal olor",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WJT391\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 35,
+          "end" : 43
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WJT391 por que apestaba",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WJT391\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 47
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi WJT391 por que huele a mierda",
       "entities" : [
         {
@@ -26654,6 +30525,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi WJT391 por que huele a pecueca",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WJT391\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 54
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WJT391 por que huele a pequeca",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WJT391\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 54
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi WJT391 por que huele asqueroso",
       "entities" : [
         {
@@ -26673,6 +30590,98 @@
           "value" : "\"stinky\"",
           "start" : 39,
           "end" : 54
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WJT391 por que huele feo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WJT391\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WJT391 por que huele mal",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WJT391\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WJT391 por que olia a mierda",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WJT391\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 52
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WJT391 por que olia feo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WJT391\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 47
         }
       ]
     },
@@ -26949,6 +30958,75 @@
           "value" : "\"bad_service\"",
           "start" : 35,
           "end" : 52
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WUB788 por que olia feo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WUB788\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 47
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WWU492 por que me dijo para allá no voy",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WWU492\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 47,
+          "end" : 63
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi WWV841 por taximetro muy rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WWV841\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"tampered_meter\"",
+          "start" : 35,
+          "end" : 55
         }
       ]
     },
@@ -27367,6 +31445,75 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi XFP983 por darme un billete falso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XFP983\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 57
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XFP983 por darme vueltas falsas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XFP983\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XFP983 por tener billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XFP983\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi XGC349 por andar sin vueltas",
       "entities" : [
         {
@@ -27505,6 +31652,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi XHR658 por que iba fumando",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XHR658\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 43,
+          "end" : 50
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi XLB958 por darme billetes falsos",
       "entities" : [
         {
@@ -27574,6 +31744,29 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi XLC613 por dar mal servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XLC613\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 39,
+          "end" : 51
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi XLC613 por horrible servicio",
       "entities" : [
         {
@@ -27593,6 +31786,52 @@
           "value" : "\"bad_service\"",
           "start" : 35,
           "end" : 52
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XLC613 por mal servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XLC613\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 47
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XLC613 por pesimo servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XLC613\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 35,
+          "end" : 50
         }
       ]
     },
@@ -27639,6 +31878,29 @@
           "value" : "\"fake_currency\"",
           "start" : 41,
           "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XNO824 por hacerme paseo millonario",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XNO824\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"millionaire_trip\"",
+          "start" : 43,
+          "end" : 59
         }
       ]
     },
@@ -27758,6 +32020,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi XSL500 por darme billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XSL500\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XSL593 por darme billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XSL593\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi XSS503 por atracarme",
       "entities" : [
         {
@@ -27800,6 +32108,144 @@
           "value" : "\"armed_robbery\"",
           "start" : 39,
           "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XSS503 por que me atracó",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XSS503\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 48
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XSS503 por que me robo con un arma",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XSS503\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XSS503 por que me robo con una pistola",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XSS503\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XSS503 por que me robó",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XSS503\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XSS503 por que me robó con un cuchillo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XSS503\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 39,
+          "end" : 46
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi XSS503 por robarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XSS503\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 35,
+          "end" : 42
         }
       ]
     },
@@ -27961,6 +32407,98 @@
           "value" : "\"no_change\"",
           "start" : 35,
           "end" : 54
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi YDA329 por darme billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"YDA329\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi YDA329 por darme un billete falso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"YDA329\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 57
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi YDA329 por darme vueltas falsas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"YDA329\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 55
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi YDA329 por tener billetes falsos",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"YDA329\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 41,
+          "end" : 56
         }
       ]
     },
@@ -28214,6 +32752,52 @@
           "value" : "\"rejected_trip\"",
           "start" : 39,
           "end" : 57
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi YLY737 por estar fumando cigarrillo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"YLY737\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 41,
+          "end" : 59
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi YLY737 por que iba fumando",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"YLY737\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"smoking\"",
+          "start" : 43,
+          "end" : 50
         }
       ]
     },
@@ -28517,6 +33101,52 @@
       ]
     },
     {
+      "text" : "Quiero reportar al taxi YRF317 por que huele a pequeca",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"YRF317\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 39,
+          "end" : 54
+        }
+      ]
+    },
+    {
+      "text" : "Quiero reportar al taxi YTH749 por andar sin vueltas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"YTH749\"",
+          "start" : 24,
+          "end" : 30
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"no_change\"",
+          "start" : 41,
+          "end" : 52
+        }
+      ]
+    },
+    {
       "text" : "Quiero reportar al taxi YTH900 por horrible servicio",
       "entities" : [
         {
@@ -28725,6 +33355,27 @@
     },
     {
       "text" : "Quiero reportar taxi ABC123"
+    },
+    {
+      "text" : "Quiero reportar un taxi por darme un billete falso",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\""
+        },
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 7,
+          "end" : 15
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 34,
+          "end" : 50
+        }
+      ]
     },
     {
       "text" : "RCM342 fumando cigarrillo",
@@ -34212,6 +38863,29 @@
       ]
     },
     {
+      "text" : "denuncio a GWC497 por horrible servicio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 0,
+          "end" : 8
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"GWC497\"",
+          "start" : 11,
+          "end" : 17
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"bad_service\"",
+          "start" : 22,
+          "end" : 39
+        }
+      ]
+    },
+    {
       "text" : "denuncio a GWC497 por mal servicio",
       "entities" : [
         {
@@ -34613,6 +39287,29 @@
       ]
     },
     {
+      "text" : "denuncio a RVK758 por darme vueltas falsas",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 0,
+          "end" : 8
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"RVK758\"",
+          "start" : 11,
+          "end" : 17
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"fake_currency\"",
+          "start" : 28,
+          "end" : 42
+        }
+      ]
+    },
+    {
       "text" : "denuncio a RVK758 por tener billetes falsos",
       "entities" : [
         {
@@ -34930,6 +39627,29 @@
       ]
     },
     {
+      "text" : "denuncio a VHT428 por que olia feo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 0,
+          "end" : 8
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"VHT428\"",
+          "start" : 11,
+          "end" : 17
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"stinky\"",
+          "start" : 26,
+          "end" : 34
+        }
+      ]
+    },
+    {
       "text" : "denuncio a VHT428 por que olía feo",
       "entities" : [
         {
@@ -34949,6 +39669,29 @@
           "value" : "\"stinky\"",
           "start" : 26,
           "end" : 34
+        }
+      ]
+    },
+    {
+      "text" : "denuncio a WIC707 por atracarme",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 0,
+          "end" : 8
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"WIC707\"",
+          "start" : 11,
+          "end" : 17
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"armed_robbery\"",
+          "start" : 22,
+          "end" : 31
         }
       ]
     },
@@ -35148,6 +39891,29 @@
       ]
     },
     {
+      "text" : "denuncio a XYM512 por que no me llevo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 0,
+          "end" : 8
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"XYM512\"",
+          "start" : 11,
+          "end" : 17
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"rejected_trip\"",
+          "start" : 26,
+          "end" : 37
+        }
+      ]
+    },
+    {
       "text" : "denuncio a XYM512 por que no me llevó",
       "entities" : [
         {
@@ -35270,6 +40036,29 @@
           "value" : "\"high_speed\"",
           "start" : 22,
           "end" : 35
+        }
+      ]
+    },
+    {
+      "text" : "denuncio a YGB217 por manejar rapido",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"report\"",
+          "start" : 0,
+          "end" : 8
+        },
+        {
+          "entity" : "licensePlates",
+          "value" : "\"YGB217\"",
+          "start" : 11,
+          "end" : 17
+        },
+        {
+          "entity" : "offenses",
+          "value" : "\"high_speed\"",
+          "start" : 22,
+          "end" : 36
         }
       ]
     },

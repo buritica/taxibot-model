@@ -12,6 +12,9 @@
     "id" : "intent",
     "values" : [
       {
+        "value" : ""
+      },
+      {
         "value" : "greeting",
         "expressions" : [
           "hello",

@@ -1,7 +1,7 @@
 {
   "data" : [
     {
-      "name" : "",
+      "name" : "Valid reports with licensePlate and offenses",
       "turns" : [
         {
           "user" : "El taxi ABC123 me dio billetes falsos",
@@ -32,50 +32,74 @@
                 {
                   "predicates" : [
                     {
+                      "name" : "licensePlate",
+                      "negative" : false
+                    },
+                    {
+                      "name" : "pendingOffenses",
+                      "negative" : false
+                    },
+                    {
                       "name" : "pendingReports",
                       "negative" : false
                     }
                   ],
-                  "operations" : [ ],
+                  "operations" : [
+                    {
+                      "action" : "template-¿Quieres reportar a 🚖 {licensePlate} por {pendingOffenses}?"
+                    }
+                  ],
                   "turns" : [
                     {
-                      "branches" : [
-                        [
-                          {
-                            "user" : "Sí",
-                            "entities" : [
-                              {
-                                "entity" : "yes_no",
-                                "value" : "\"yes\"",
-                                "start" : 0,
-                                "end" : 2
-                              }
-                            ],
-                            "operations" : [
-                              {
-                                "action" : "function-handlePendingReports"
-                              }
-                            ]
-                          }
-                        ],
-                        [
-                          {
-                            "user" : "No",
-                            "entities" : [
-                              {
-                                "entity" : "yes_no",
-                                "value" : "\"no\"",
-                                "start" : 0,
-                                "end" : 2
-                              }
-                            ],
-                            "operations" : [
-                              {
-                                "action" : "function-handlePendingReports"
-                              }
-                            ]
-                          }
-                        ]
+                      "user" : "Sí",
+                      "entities" : [
+                        {
+                          "entity" : "yes_no",
+                          "value" : "\"yes\"",
+                          "start" : 0,
+                          "end" : 2
+                        }
+                      ],
+                      "operations" : [
+                        {
+                          "action" : "function-handlePendingReports"
+                        },
+                        {
+                          "branches" : [
+                            {
+                              "predicates" : [
+                                {
+                                  "name" : "reportFiled",
+                                  "negative" : false
+                                }
+                              ],
+                              "operations" : [
+                                {
+                                  "action" : "template-¡Gracias! He guardado tu reporte sobre 🚖 {licensePlate} 🙅."
+                                },
+                                {
+                                  "action" : "function-end"
+                                }
+                              ]
+                            },
+                            {
+                              "predicates" : [
+                                {
+                                  "name" : "reportCanceled",
+                                  "negative" : false
+                                }
+                              ],
+                              "operations" : [
+                                {
+                                  "action" : "template-👌 He cancelado tu reporte pendiente."
+                                },
+                                {
+                                  "action" : "function-end"
+                                }
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -90,16 +114,22 @@
       "name" : "",
       "turns" : [
         {
-          "user" : "Hola",
+          "user" : "Holi",
           "entities" : [
             {
               "entity" : "intent",
               "value" : "\"greeting\""
+            },
+            {
+              "entity" : "intent",
+              "value" : "\"greeting\"",
+              "start" : 0,
+              "end" : 4
             }
           ],
           "operations" : [
             {
-              "action" : "template-Holi 👋"
+              "action" : "template-👋 Holi"
             }
           ]
         }
