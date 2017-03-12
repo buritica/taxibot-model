@@ -15,6 +15,8 @@
         "expressions" : [
           "armed_robbery",
           "atracarme",
+          "ladron",
+          "ladrón",
           "me atrac",
           "me atraco",
           "me atracó",
@@ -124,6 +126,7 @@
           "fumando",
           "fumando cigarrillo",
           "fumar",
+          "funar",
           "smoking"
         ]
       },
@@ -155,6 +158,7 @@
           "taximetro marca más rápido",
           "taximetro muy rapido",
           "taximetro rapido",
+          "taxímetro adulterado",
           "taxímetro muy rapido"
         ]
       }

@@ -1,6 +1,11 @@
 {
   "data" : [
     {
+      "id" : "function-addLicensePlate",
+      "type" : "function",
+      "name" : "addLicensePlate"
+    },
+    {
       "id" : "function-end",
       "type" : "function",
       "name" : "end"
@@ -16,6 +21,22 @@
       "name" : "validateReports"
     },
     {
+      "id" : "template-Lo siento, no entendí 😅. Empieza tu reporte de nuevo.",
+      "type" : "template",
+      "template" : "Lo siento, no entendí 😅. Empieza tu reporte de nuevo."
+    },
+    {
+      "id" : "template-{invalidLicensePlate} no parece una placa valida 🤔. ¿Me la puedes repetir?",
+      "type" : "template",
+      "template" : "{invalidLicensePlate} no parece una placa valida 🤔. ¿Me la puedes repetir?",
+      "requirements" : [
+        {
+          "name" : "invalidLicensePlate",
+          "negative" : false
+        }
+      ]
+    },
+    {
       "id" : "template-¡Gracias! He guardado tu reporte sobre 🚖 {licensePlate} 🙅.",
       "type" : "template",
       "template" : "¡Gracias! He guardado tu reporte sobre 🚖 {licensePlate} 🙅.",
@@ -25,6 +46,11 @@
           "negative" : false
         }
       ]
+    },
+    {
+      "id" : "template-¿Cómo es la placa del 🚖 que quieres reportar?",
+      "type" : "template",
+      "template" : "¿Cómo es la placa del 🚖 que quieres reportar?"
     },
     {
       "id" : "template-¿Quieres reportar a 🚖 {licensePlate} por {pendingOffenses}?",

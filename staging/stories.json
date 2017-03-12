@@ -4,23 +4,29 @@
       "name" : "Valid reports with licensePlate and offenses",
       "turns" : [
         {
-          "user" : "El taxi ABC123 me dio billetes falsos",
+          "user" : "Quiero reportar a ABC123 por usar billetes falsos",
           "entities" : [
             {
               "entity" : "intent",
               "value" : "\"report\""
             },
             {
+              "entity" : "intent",
+              "value" : "\"report\"",
+              "start" : 7,
+              "end" : 15
+            },
+            {
               "entity" : "licensePlates",
               "value" : "\"ABC123\"",
-              "start" : 8,
-              "end" : 14
+              "start" : 18,
+              "end" : 24
             },
             {
               "entity" : "offenses",
               "value" : "\"fake_currency\"",
-              "start" : 22,
-              "end" : 37
+              "start" : 34,
+              "end" : 49
             }
           ],
           "operations" : [
@@ -46,55 +52,148 @@
                   ],
                   "operations" : [
                     {
+                      "bookmark" : "confirm"
+                    },
+                    {
                       "action" : "template-¿Quieres reportar a 🚖 {licensePlate} por {pendingOffenses}?"
                     }
                   ],
                   "turns" : [
                     {
-                      "user" : "Sí",
+                      "branches" : [
+                        [
+                          {
+                            "user" : "Sí",
+                            "entities" : [
+                              {
+                                "entity" : "yes_no",
+                                "value" : "\"yes\"",
+                                "start" : 0,
+                                "end" : 2
+                              }
+                            ],
+                            "operations" : [
+                              {
+                                "bookmark" : "handle-pending"
+                              },
+                              {
+                                "action" : "function-handlePendingReports"
+                              },
+                              {
+                                "branches" : [
+                                  {
+                                    "predicates" : [
+                                      {
+                                        "name" : "reportFiled",
+                                        "negative" : false
+                                      }
+                                    ],
+                                    "operations" : [
+                                      {
+                                        "action" : "template-¡Gracias! He guardado tu reporte sobre 🚖 {licensePlate} 🙅."
+                                      },
+                                      {
+                                        "action" : "function-end"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "predicates" : [
+                                      {
+                                        "name" : "reportCanceled",
+                                        "negative" : false
+                                      }
+                                    ],
+                                    "operations" : [
+                                      {
+                                        "action" : "template-👌 He cancelado tu reporte pendiente."
+                                      },
+                                      {
+                                        "action" : "function-end"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        [
+                          {
+                            "user" : "FILE_PENDING_REPORTS",
+                            "entities" : [ ],
+                            "operations" : [
+                              {
+                                "jump" : "handle-pending"
+                              }
+                            ]
+                          }
+                        ],
+                        [
+                          {
+                            "user" : "CANCEL_PENDING_REPORTS",
+                            "entities" : [ ],
+                            "operations" : [
+                              {
+                                "jump" : "handle-pending"
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "predicates" : [
+                    {
+                      "name" : "invalidLicensePlate",
+                      "negative" : false
+                    },
+                    {
+                      "name" : "pendingOffenses",
+                      "negative" : false
+                    },
+                    {
+                      "name" : "pendingReports",
+                      "negative" : false
+                    }
+                  ],
+                  "operations" : [
+                    {
+                      "bookmark" : "repeat-license"
+                    },
+                    {
+                      "action" : "template-{invalidLicensePlate} no parece una placa valida 🤔. ¿Me la puedes repetir?"
+                    }
+                  ],
+                  "turns" : [
+                    {
+                      "user" : "ABC123",
                       "entities" : [
                         {
-                          "entity" : "yes_no",
-                          "value" : "\"yes\"",
+                          "entity" : "licensePlates",
+                          "value" : "\"ABC123\"",
                           "start" : 0,
-                          "end" : 2
+                          "end" : 6
                         }
                       ],
                       "operations" : [
                         {
-                          "action" : "function-handlePendingReports"
+                          "action" : "function-addLicensePlate"
                         },
                         {
                           "branches" : [
                             {
                               "predicates" : [
                                 {
-                                  "name" : "reportFiled",
+                                  "name" : "licensePlate",
                                   "negative" : false
                                 }
                               ],
                               "operations" : [
                                 {
-                                  "action" : "template-¡Gracias! He guardado tu reporte sobre 🚖 {licensePlate} 🙅."
-                                },
-                                {
-                                  "action" : "function-end"
-                                }
-                              ]
-                            },
-                            {
-                              "predicates" : [
-                                {
-                                  "name" : "reportCanceled",
-                                  "negative" : false
-                                }
-                              ],
-                              "operations" : [
-                                {
-                                  "action" : "template-👌 He cancelado tu reporte pendiente."
-                                },
-                                {
-                                  "action" : "function-end"
+                                  "jump" : "confirm"
                                 }
                               ]
                             }
@@ -130,6 +229,121 @@
           "operations" : [
             {
               "action" : "template-👋 Holi"
+            },
+            {
+              "action" : "function-end"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "",
+      "turns" : [
+        {
+          "user" : "Quiero reportar un taxi por darme un billete falso",
+          "entities" : [
+            {
+              "entity" : "intent",
+              "value" : "\"\""
+            },
+            {
+              "entity" : "intent",
+              "value" : "\"report\"",
+              "start" : 7,
+              "end" : 15
+            },
+            {
+              "entity" : "offenses",
+              "value" : "\"fake_currency\"",
+              "start" : 34,
+              "end" : 50
+            }
+          ],
+          "operations" : [
+            {
+              "action" : "function-validateReports"
+            },
+            {
+              "branches" : [
+                {
+                  "predicates" : [
+                    {
+                      "name" : "missingLicensePlate",
+                      "negative" : false
+                    },
+                    {
+                      "name" : "pendingOffenses",
+                      "negative" : false
+                    },
+                    {
+                      "name" : "pendingReports",
+                      "negative" : false
+                    }
+                  ],
+                  "operations" : [
+                    {
+                      "action" : "template-¿Cómo es la placa del 🚖 que quieres reportar?"
+                    }
+                  ],
+                  "turns" : [
+                    {
+                      "user" : "ABC123",
+                      "entities" : [
+                        {
+                          "entity" : "licensePlates",
+                          "value" : "\"ABC123\"",
+                          "start" : 0,
+                          "end" : 6
+                        }
+                      ],
+                      "operations" : [
+                        {
+                          "action" : "function-addLicensePlate"
+                        },
+                        {
+                          "branches" : [
+                            {
+                              "predicates" : [
+                                {
+                                  "name" : "licensePlate",
+                                  "negative" : false
+                                }
+                              ],
+                              "operations" : [
+                                {
+                                  "jump" : "confirm"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "predicates" : [
+                    {
+                      "name" : "invalidLicensePlate",
+                      "negative" : false
+                    },
+                    {
+                      "name" : "pendingOffenses",
+                      "negative" : false
+                    },
+                    {
+                      "name" : "pendingReports",
+                      "negative" : false
+                    }
+                  ],
+                  "operations" : [
+                    {
+                      "jump" : "repeat-license"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
